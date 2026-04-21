@@ -161,10 +161,10 @@ body {
 
 .connector {
   font-size: 2.2rem;
-  color: #FF4466;
+  color: #FFD700;
   flex-shrink: 0;
   line-height: 1;
-  filter: drop-shadow(0 0 8px rgba(255,68,102,.5));
+  filter: drop-shadow(0 0 8px rgba(255,215,0,.5));
 }
 
 /* ---- BUTTON ---- */
@@ -346,7 +346,7 @@ body {
       <div class="slot-name" id="sname1">?</div>
     </div>
 
-    <div class="connector">💞</div>
+    <div class="connector">🤝</div>
 
     <div class="slot-card" id="card2">
       <div class="slot-badge">Thành viên B</div>
@@ -595,7 +595,7 @@ function updatePairs() {
     li.className = 'pair-row';
     li.innerHTML = `<span class="pr-num">${num}</span>
       <span class="pr-name">${p.a}</span>
-      <span class="pr-heart">💞</span>
+      <span class="pr-heart">🤝</span>
       <span class="pr-name">${p.b}</span>`;
     ul.appendChild(li);
   });
