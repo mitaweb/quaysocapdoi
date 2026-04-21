@@ -322,6 +322,17 @@ body {
 .pr-heart { color: #FF4466; text-align: center; font-size: .95rem; }
 .no-pairs-msg { color: rgba(255,255,255,.28); font-size: .82rem; text-align: center; padding: 22px 0; }
 
+/* ---- LOGO ---- */
+.logo-wrap { text-align: center; margin-bottom: 18px; }
+.logo-card {
+  display: inline-block;
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px 24px 12px;
+  box-shadow: 0 6px 32px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.06);
+}
+.bni-logo { width: 170px; height: auto; display: block; }
+
 /* ---- CONFETTI ---- */
 #confetti { position: fixed; inset: 0; pointer-events: none; z-index: 200; }
 </style>
@@ -331,6 +342,34 @@ body {
 <canvas id="confetti"></canvas>
 
 <div class="wrapper">
+
+  <div class="logo-wrap">
+    <div class="logo-card">
+      <!-- BNI New Day logo – inline SVG, no external file needed -->
+      <svg class="bni-logo" viewBox="0 0 234 138" xmlns="http://www.w3.org/2000/svg">
+        <!-- BN letters -->
+        <text x="4" y="84"
+          font-family="'Arial Black','Arial Bold',Impact,Arial,sans-serif"
+          font-size="84" font-weight="900" fill="#C8102E"
+          textLength="130" lengthAdjust="spacing">BN</text>
+        <!-- I with diagonal slash at top-right -->
+        <defs>
+          <clipPath id="iclip">
+            <polygon points="138,0 170,0 200,36 200,84 138,84"/>
+          </clipPath>
+        </defs>
+        <rect x="138" y="0" width="62" height="84" fill="#C8102E" clip-path="url(#iclip)"/>
+        <!-- ® mark -->
+        <text x="202" y="26"
+          font-family="Arial,sans-serif" font-size="18" fill="#C8102E">®</text>
+        <!-- NEW DAY -->
+        <text x="102" y="126"
+          font-family="Arial,Helvetica,sans-serif"
+          font-size="23" font-weight="700" fill="#6B7280"
+          text-anchor="middle" letter-spacing="9">NEW DAY</text>
+      </svg>
+    </div>
+  </div>
 
   <div class="title">🎲 Vòng Quay Ghép Cặp</div>
   <div class="subtitle">Lucky Draw Pairing System</div>
